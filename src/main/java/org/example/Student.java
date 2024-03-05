@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Student {
-    public String imie;
-    public String nazwisko;
-    public int numerIndeksu;
+    public final String imie;
+    public final String nazwisko;
+    public final int numerIndeksu;
     public int rokStudiow;
     public ArrayList<Przedmiot> listaPrzedmiotow = new ArrayList<>();
 
@@ -39,12 +39,9 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "imie='" + imie + '\'' +
-                ", nazwisko='" + nazwisko + '\'' +
-                ", numerIndeksu=" + numerIndeksu +
-                ", rokStudiow=" + rokStudiow +
-                '}';
+        return "Student - " + imie + ' ' + nazwisko + '\n' +
+                "Numer indeksu - " + numerIndeksu + '\n' +
+                "Rok studiow - " + rokStudiow;
     }
 
     @Override
@@ -61,6 +58,6 @@ public class Student {
     }
 
     public void dodajDoListy(){
-        
+        listaPrzedmiotow.add(new Przedmiot(""));
     }
 }

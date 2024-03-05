@@ -3,8 +3,8 @@ package org.example;
 import java.util.Objects;
 
 public class Przedmiot {
-    String nazwaPrzedmiotu;
-    int licbaPunktowECTS;
+    public String nazwaPrzedmiotu;
+    public int licbaPunktowECTS;
 
     public Przedmiot(String nazwaPrzedmiotu) {
         this.nazwaPrzedmiotu = nazwaPrzedmiotu;
@@ -18,9 +18,9 @@ public class Przedmiot {
         return licbaPunktowECTS;
     }
 
-    public void setNazwaPrzedmiotu(String nazwaPrzedmiotu) {
+    /*public void setNazwaPrzedmiotu(String nazwaPrzedmiotu) {
         this.nazwaPrzedmiotu = nazwaPrzedmiotu;
-    }
+    }*/
 
     public void setLicbaPunktowECTS(int licbaPunktowECTS) {
         this.licbaPunktowECTS = licbaPunktowECTS;
@@ -28,7 +28,7 @@ public class Przedmiot {
 
     @Override
     public String toString() {
-        return nazwaPrzedmiotu + '-' + licbaPunktowECTS;
+        return nazwaPrzedmiotu + " - " + licbaPunktowECTS;
     }
 
     @Override
